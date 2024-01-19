@@ -1,0 +1,53 @@
+{
+  "groups": [
+    {
+      "name": "gen",
+      "type": "com.ruoyi.generator.config.GenConfig",
+      "sourceType": "com.ruoyi.generator.config.GenConfig"
+    },
+    {
+      "name": "ruoyi",
+      "type": "com.ruoyi.common.config.RuoYiConfig",
+      "sourceType": "com.ruoyi.common.config.RuoYiConfig"
+    },
+    {
+      "name": "spring.datasource.druid.master",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.ruoyi.framework.config.DruidConfig",
+      "sourceMethod": "masterDataSource(com.ruoyi.framework.config.properties.DruidProperties)"
+    },
+    {
+      "name": "spring.datasource.druid.slave",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.ruoyi.framework.config.DruidConfig",
+      "sourceMethod": "slaveDataSource(com.ruoyi.framework.config.properties.DruidProperties)"
+    }
+  ],
+  "properties": [
+    {
+      "name": "ruoyi.copyright-year",
+      "type": "java.lang.String",
+      "description": "版权年份",
+      "sourceType": "com.ruoyi.common.config.RuoYiConfig"
+    },
+    {
+      "name": "ruoyi.demo-enabled",
+      "type": "java.lang.Boolean",
+      "description": "实例演示开关",
+      "sourceType": "com.ruoyi.common.config.RuoYiConfig"
+    },
+    {
+      "name": "ruoyi.name",
+      "type": "java.lang.String",
+      "description": "项目名称",
+      "sourceType": "com.ruoyi.common.config.RuoYiConfig"
+    },
+    {
+      "name": "ruoyi.version",
+      "type": "java.lang.String",
+      "description": "版本",
+      "sourceType": "com.ruoyi.common.config.RuoYiConfig"
+    }
+  ],
+  "hints": []
+}
